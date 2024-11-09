@@ -5,8 +5,7 @@ FROM python:3.10
 WORKDIR /app
 
 # Copy requirements and install them
-COPY requirements.txt .
-RUN pip install -r requirements.txt
+RUN pip install libretranslate
 
 # Copy the application code
 COPY . .
